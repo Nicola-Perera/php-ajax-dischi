@@ -4,6 +4,7 @@
 -->
 <?php
 $songs = 'https://flynn.boolean.careers/exercises/api/array/music';
+echo 'test header prova';
 ?>
 
 <!DOCTYPE html>
@@ -13,17 +14,19 @@ $songs = 'https://flynn.boolean.careers/exercises/api/array/music';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>php-ajax-dischi</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
 
 <!-- header -->
-    <?php require __DIR__ . '/components/head.php'; ?>
+    <?php require __DIR__ . '../components/header.php'; ?>
 
 <!-- main -->
     <?php require __DIR__ . '/components/main.php'; ?>
 
 <!-- footer -->
-    <?php require __DIR__ . '/components/footer.php'; ?>
+    <?php require __DIR__ . '/components/footer.php';
+    ?>
     
 <!-- axios -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js' integrity='sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==' crossorigin='anonymous' referrerpolicy='no-referrer'></script>
