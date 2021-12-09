@@ -18,6 +18,7 @@ require __DIR__ . '/../data/songs.php';
 <body>
 <?php
     require __DIR__ . '/../components/header.php';
+    require __DIR__ . '/../components/main.php';
 ?>
     
 <!-- axios -->
