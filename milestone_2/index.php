@@ -9,9 +9,30 @@
 </head>
 <body>
 <?php
+
+// header
     require __DIR__ . '/../components/header.php';
-    require __DIR__ . '/../components/main.php';
 ?>
+
+<!-- main -->
+<main>
+    <div id="app">
+    <div class="cards container">
+            <div class="card" v-for="song in songs">
+                <div class="song">
+                    <img :src="song.poster" alt="song poster">
+                        <h2>{{ song.title }}</h2>
+                        <div class="song_content">
+                            <div>
+                                <h4>{{ song.author }}</h4>
+                                <h4>{{ song.year }}</h4>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</main>
     
 <!-- axios -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js' integrity='sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==' crossorigin='anonymous' referrerpolicy='no-referrer'></script>
