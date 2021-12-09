@@ -9,6 +9,13 @@
 :root {
 	--bg_light_gray: #2E3A46;
 	--bg_dark_gray: #1E2D3B;
+    --card_title: #fff;
+    --card_subtext: #808078;
+}
+
+/* common rules */
+.container {
+    display: flex;
 }
 
 /* header */
@@ -21,3 +28,35 @@ header .spotify {
 }
 
 /* main */
+main {
+    background-color: var(--bg_dark_gray);
+}
+.cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+}
+.card {
+    width: calc(100% / 7);
+    margin-left: .8rem;
+    margin-right: .8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    background-color: var(--bg_light_gray);
+}
+.card img {
+    width: 100%;
+}
+.song {
+    padding: 1rem;
+}
+.card h2 {
+    color: var(--card_title);
+    font-size: 1.1rem;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+.card h4 {
+    color: var(--card_subtext);
+}
