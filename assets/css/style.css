@@ -13,5 +13,9 @@
 
 /* header */
 header {
+    padding: .5rem;
     background-color: var(--bg_light_gray);
+}
+header .spotify {
+    width: 3%;
 }

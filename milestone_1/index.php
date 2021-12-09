@@ -3,8 +3,7 @@
     Utilizzare: Html, JS, VueJS, PHP 
 -->
 <?php
-$songs = 'https://flynn.boolean.careers/exercises/api/array/music';
-echo 'test header prova 2';
+require __DIR__ . '/../data/songs.php';
 ?>
 
 <!DOCTYPE html>
